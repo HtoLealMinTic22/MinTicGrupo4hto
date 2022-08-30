@@ -1,0 +1,21 @@
+@page
+@model ProyectoCiclo3.App.Frontend.Pages.FormRutasModel
+@{
+}
+ 
+<div class="text-center">
+<form method=”POST”>
+  <label for="origen" class="form-label">Origen:</label>
+  <select id="origen" class="form-control" name="origen" >
+  <option value="seleccione">Seleccione Origen</option>
+  </select>
+  <label for="destino" class="form-label">Destino:</label>
+  <select id="destino" class="form-control" name="destino" >
+  <option value="seleccione">Seleccione Destino</option>
+  </select>
+  <label for="tiempo" class="form-label">Tiempo estimado:</label>
+  <input type="number" class="form-control" id="tiempo" name="tiempo" placeholder="Tiempo Estimado">
+  <hr>
+  <button type="submit" class="btn btn-success">Enviar</button>
+</form>
+</div>
