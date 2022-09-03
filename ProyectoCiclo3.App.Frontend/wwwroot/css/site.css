@@ -9,7 +9,19 @@ a.navbar-brand {
 
 /* Provide sufficient contrast against white background */
 a {
-  color: #0366d6;
+  color: #0e3363;
+  background-color: #e29f23;
+}
+
+b {
+  color: #0e3363;
+  background-color: #8eb0c7;
+}
+
+form{
+  border-radius: 5px;
+  color: #0e3363;
+  background-color: #8eb0c7;
 }
 
 .btn-primary {
@@ -62,10 +74,46 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+
+
+
+
 .footer {
   position: absolute;
+  background: #63b3d8;
+  color: rgb(243, 220, 12);
   bottom: 0;
   width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+  text-align: center;
+  border-radius:10px;
+  /*white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there 
+
+ /*
+  .footer{
+    background: #dfc0c0;
+    padding: 1rem 0; 
+    text-align: center;
+    margin-top: 1px;
+    border:1px solid #b83567;
+    border-radius:10px;
+    -webkit-border-radius:10px; */
+
+}
+
+
+
+
+
+
+
+img {
+  width: 35%; 
+  height: auto;
+  margin: auto;
+  display:block; 
+  border-radius: 5px;
+  box-shadow: 5px 5px 0px rgb(4, 51, 95);
+  padding: 1px;
+  border: 1px solid #000;
 }

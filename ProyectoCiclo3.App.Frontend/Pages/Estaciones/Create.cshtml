@@ -3,92 +3,56 @@
 @{
 }
  
-<!--
-<center>
-    <br>
-    <img src="https://fontawesome.com/icons/truck-front?s=solid&f=classic" class="img-circle" width="150" height="150">
-</center>
- -->
+<div class="content-allReg">
+    <div class="row">
+    
+      <!-- Columna Uno -->
+      <div class="col-xs- col-sm-4 col-md-4 col-lg-4 text-justify" >
+         <h3>Creacion de Estaciones </h3>
+      </div>
 
-<!-- This is a comment 
-<div class="container text-center ">   
+      <!-- Columna Dos -->
+      <div class="col-xs- col-sm-4 col-md-4 col-lg-4 text-justify">  
+        <main> 
+           <center>
+             <br>
+             <form method="POST" action="registro.php" name="registro" id="registro">
+               <b
+                <label for="nombre" class="form-label">Nombre12:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre ">
+                <label for="direccion" class="form-label">Direccion:</label>
+                <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Direccion ">
+                <label for="coord_x" class="form-label">Coordenadas X:</label>
+                <input type="number" class="form-control" id="coord_x" name="coord_x" placeholder="Coordenadas X">
+                <label for="coord_y" class="form-label">Coordenadas Y:</label>
+                <input type="number" class="form-control" id="coord_y" name="coord_y" placeholder="Coordenadas Y">
+                <label for="tipo" class="form-label">Tipo:</label>
+               </b>
 
-     <label for="nombreUno" class="form-label">NombreUno:</label>
-     <input type="text"  class="form-control" id="nombreUno" name="nombreUno" placeholder="Nombre Est">
-
-
-</div>
-
--->
-<!--<div class="col-xs- col-sm-4 col-md-4 col-lg-4 text-justify">  -->
-
-<!-- <div class="col-xs- col-sm-4 col-md-4 margin:30 "> 
-<div class="container text-center">
-
-<form method=”POST”>
-  <label for="nombre" class="form-label">Nombre5:</label>
-  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre Est">
-  <label for="direccion" class="form-label">Direccion:</label>
-  <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Direccion Est">
-  <label for="coord_x" class="form-label">Coordenadas X:</label>
-  <input type="number" class="form-control" id="coord_x" name="coord_x" placeholder="Coordenadas X">
-  <label for="coord_y" class="form-label">Coordenadas Y:</label>
-  <input type="number" class="form-control" id="coord_y" name="coord_y" placeholder="Coordenadas Y">
-  <label for="tipo" class="form-label">Tipo:</label>
+               <select id="tipo" class="form-control" name="tipo" >
+                 <option value="seleccione un tipo de Estacion">Seleccione un tipo</option>
+                 <option value="principal">Principal</option>
+                 <option value="secundaria">Secundaria</option>
+               </select>
  
-  <select id="tipo" class="form-control" name="tipo" >
-   <option value="seleccione un tipo de Estacion">Seleccione un tipo</option>
-   <option value="principal">Principal</option>
-   <option value="secundaria">Secundaria</option>
-  </select>
- 
-  <hr>
-  <button type="submit" class="btn btn-success">Enviar</button>
-</form>
+               <br> 
+               <button type="submit" class="btn btn-success">Enviar</button>
+             </form> 
+           </center>
+        </main>
+      </div> 
 
+      <!-- Columna Tres -->
+      <aside class="col-xs- col-sm-4 col-md-4 col-lg-4 text-justify"> 
+         <center>
+           <img src="https://es.123rf.com/photo_132451594_paisaje-con-parada-de-autob%C3%BAs-vac%C3%ADa-en-una-ma%C3%B1ana-soleada.html?vti=mkt73tqozdf2jtdqyl-1-1" class="img-circle" width="150" height="600">
+         </center>
+       </aside>
 
-</div>
+    </div>
 
-
-
-<div class="col-xs- col-sm-4 col-md-4 ">   
-</div>  -->
-
-<div class="container text-center">
-  <div class="row">
-  
-  <div class="col">
   </div>
 
-  <div class="col">
-      
-    <form method=”POST”>
-       <label for="nombre" class="form-label">Nombre5:</label>
-       <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre ">
-       <label for="direccion" class="form-label">Direccion:</label>
-       <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Direccion ">
-       <label for="coord_x" class="form-label">Coordenadas X:</label>
-       <input type="number" class="form-control" id="coord_x" name="coord_x" placeholder="Coordenadas X">
-       <label for="coord_y" class="form-label">Coordenadas Y:</label>
-       <input type="number" class="form-control" id="coord_y" name="coord_y" placeholder="Coordenadas Y">
-       <label for="tipo" class="form-label">Tipo:</label>
- 
-       <select id="tipo" class="form-control" name="tipo" >
-          <option value="seleccione un tipo de Estacion">Seleccione un tipo</option>
-          <option value="principal">Principal</option>
-          <option value="secundaria">Secundaria</option>
-       </select>
- 
-       <hr>
-       <button type="submit" class="btn btn-success">Enviar</button>
-    </form>
-  </div>
 
-<div class="col">
-
-</div>
-
-</div>
-</div>
 
 
