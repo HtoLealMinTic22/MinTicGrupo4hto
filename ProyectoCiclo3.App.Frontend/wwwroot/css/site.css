@@ -87,7 +87,7 @@ body {
 }
 
 img {
-  width: 35%; 
+  width: 100%; 
   height: auto;
   margin: auto;
   display:block; 
