@@ -14,16 +14,19 @@ namespace ProyectoCiclo3.App.Frontend.Pages
     public class FormBusModel : PageModel
     {
  
-    // ojo controladpr
-    public FormBusesModel(RepositorioBuses repositorioBuses)
+
+ private readonly RepositorioBuses repositorioBuses;
+        [BindProperty]
+        public Buses Bus {get;set;}
+
+    // ojo constructor, recibe los parametros
+    public FormBusModel(RepositorioBuses repositorioBuses)
     {
         this.repositorioBuses = repositorioBuses;
     }
 
 
-        private readonly RepositorioBuses repositorioBuses;
-        [BindProperty]
-        public Buses Bus {get;set;}
+       
  
  
         public void OnGet()
@@ -41,3 +44,4 @@ namespace ProyectoCiclo3.App.Frontend.Pages
             return RedirectToPage("./List");
         }
     }
+}    
