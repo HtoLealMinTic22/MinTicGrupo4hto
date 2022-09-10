@@ -9,3 +9,5 @@ namespace ProyectoCiclo3.App.Dominio{
         public string placa {get; set;} 
     }
 }
+
+

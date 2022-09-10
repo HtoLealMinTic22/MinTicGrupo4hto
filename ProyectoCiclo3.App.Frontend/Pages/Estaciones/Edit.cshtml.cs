@@ -9,12 +9,13 @@ using ProyectoCiclo3.App.Dominio;
  
 namespace ProyectoCiclo3.App.Frontend.Pages
 {
-    public class DetailsEstacionModel : PageModel
+    public class EditEstacionModel : PageModel
     {
        private readonly RepositorioEstaciones repositorioEstaciones;
-        public Estaciones Estacion {get;set;}
+       [BindProperty]
+       public Estaciones Estacion {get;set;}
  
-        public DetailsEstacionModel(RepositorioEstaciones repositorioEstaciones)
+        public EditEstacionModel(RepositorioEstaciones repositorioEstaciones)
        {
             this.repositorioEstaciones=repositorioEstaciones;
        }
@@ -23,7 +24,20 @@ namespace ProyectoCiclo3.App.Frontend.Pages
         {
             Estacion=repositorioEstaciones.GetWithId(estacionId);
             return Page();
- 
         }
+
+        public IActionResult OnPost()
+        {
+            if(!ModelState.IsValid)
+            {
+                return Page();
+            }
+            if(Estacion.id>0)
+            {
+            Estacion = repositorioEstaciones.Update(Estacion);
+            }
+            return RedirectToPage("./List");
+        }
+
     }
 }

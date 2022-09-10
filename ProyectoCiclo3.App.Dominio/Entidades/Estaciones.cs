@@ -9,3 +9,6 @@ namespace ProyectoCiclo3.App.Dominio{
         public string tipo {get;set;}
     }
 }
+
+
+
