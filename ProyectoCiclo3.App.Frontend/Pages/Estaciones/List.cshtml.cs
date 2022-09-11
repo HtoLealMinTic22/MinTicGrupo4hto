@@ -17,6 +17,10 @@ namespace ProyectoCiclo3.App.Frontend.Pages
     private readonly RepositorioEstaciones repositorioEstaciones;
     public IEnumerable<Estaciones> Estaciones {get;set;}
  
+    [BindProperty]
+       public Estaciones Estacion {get;set;}
+
+
     public ListEstacionesModel(RepositorioEstaciones repositorioEstaciones)
     {
         this.repositorioEstaciones=repositorioEstaciones;
@@ -26,5 +30,17 @@ namespace ProyectoCiclo3.App.Frontend.Pages
     {
         Estaciones=repositorioEstaciones.GetAll();
     }
+
+public IActionResult OnPost()
+    {
+        if(Estacion.id>0)
+        {
+            repositorioEstaciones.Delete(Estacion.id);
+        }
+        return RedirectToPage("./List");
+    }
+
+
+
     }
 }

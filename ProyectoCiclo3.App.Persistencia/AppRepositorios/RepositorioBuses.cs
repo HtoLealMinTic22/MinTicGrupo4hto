@@ -25,6 +25,8 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
         {
             return buses;
         }
+
+
  
     public Buses GetWithId(int id){
             return buses.SingleOrDefault(e => e.id == id);

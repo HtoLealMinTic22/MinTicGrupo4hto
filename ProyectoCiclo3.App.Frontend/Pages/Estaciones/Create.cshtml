@@ -17,25 +17,26 @@
            <center>
              <br>
              <form method="POST" name="estaciones" id="estaciones">
-               <b
-                <label for="nombre" class="form-label">Nombre13:</label>
-                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre " required>
-                <label for="direccion" class="form-label">Direccion:</label>
-                <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Direccion ">
-                <label for="coord_x" class="form-label">Coordenadas X:</label>
-                <input type="number" class="form-control" id="coord_x" name="coord_x" placeholder="Coordenadas X">
-                <label for="coord_y" class="form-label">Coordenadas Y:</label>
-                <input type="number" class="form-control" id="coord_y" name="coord_y" placeholder="Coordenadas Y">
-                <label for="tipo" class="form-label">Tipo:</label>
-               </b>
+             
+               <!-- // "Estacion", es la estacion de enlace -->
 
-               <select id="tipo" class="form-control" name="tipo" >
-                 <option value="seleccione un tipo de Estacion">Seleccione un tipo</option>
-                 <option value="principal">Principal</option>
-                 <option value="secundaria">Secundaria</option>
+               <label for="nombre" class = "form-label">Nombre:</label>
+               <input type="text" class="form-control" required placeholder="Nombre" minlength="3" asp-for="Estacion.nombre">
+               <span class="text-danger" asp-validation-for="Estacion.nombre"></span> <br>
+
+               <label for="direccion" class="form-label">Direccion:</label>
+               <input type="text" class="form-control" required placeholder="Direccion" asp-for="Estacion.direccion">
+               <label for="coord_x" class="form-label">Coordenada X:</label>
+               <input type="number" class="form-control" required placeholder="Coordenada X" asp-for="Estacion.coord_x" step="any">
+               <label for="coord_y" class="form-label">Coordenada Y:</label>
+               <input type="number" class="form-control" required placeholder="Coordenada Y" asp-for="Estacion.coord_y" step="any">
+               <label for="tipo">Tipo:</label>
+               <select class="form-control" asp-for="Estacion.tipo">
+                  <option value="">Seleccione el Tipo</option>
+                  <option value="Principal">Principal</option>
+                  <option value="Segundaria">Segundaria</option>
                </select>
- 
-               <br> 
+               <hr>
                <button type="submit" class="btn btn-success">Enviar</button>
              </form> 
            </center>
@@ -53,4 +54,5 @@
     </div>
 
   </div>
+
 
