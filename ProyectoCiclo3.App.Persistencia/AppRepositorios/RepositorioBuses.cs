@@ -55,6 +55,15 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
            return newBus;
         }
 
+
+    public Buses Delete(int id)
+        {
+            var bus= buses.SingleOrDefault(e => e.id == id);
+            buses.Remove(bus);
+            return bus;
+        }
+
+
     }
 }
 
